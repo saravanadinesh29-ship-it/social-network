@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: social-network
+    env: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/social-network-1.0.0.jar
+    plan: free
